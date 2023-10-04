@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
-  <section class="home" id="home">
+  <section class="home show-animate" id="home">
     <div class="home-content">
       <h1>Hi,I'm <span> Hazal Zengin </span></h1>
       <div class="text-animate">
         <h3>DEVELOPER</h3>
+        <span class="animate" style="--i:2;"></span>
         </div>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit in odio et elementum. Aliquam sagittis sit amet dui vel fermentum. Donec blandit nec neque eget fermentum. Nam nec nulla eget tellus ullamcorper rhoncus. Morbi porttitor mauris nunc, vel mollis nulla facilisis eget. Proin cursus, nibh ut convallis venenatis, purus neque tempor odio, sit amet gravida tortor ex ac nibh. Fusce vehicula est nec enim mollis, interdum dapibus mi viverra. Phasellus accumsan lacus non metus aliquam fringilla. Curabitur id suscipit enim. Fusce laoreet urna eget lectus dictum, et aliquet turpis posuere. Nullam sodales rhoncus diam sed rhoncus. Cras consectetur lectus quam, ac tempus nisl porta tempor. Nunc et fermentum leo. Suspendisse ac ante non justo consequat pretium. Praesent quis felis et nibh auctor sodales.</p>
         <div class="btn-box">
           <a href="#" class="btn">Hire Me</a>
           <a href="#" class="btn">Let's Talk</a>
+          <span class="animate" style="--i:2;"></span>
           </div>
           </div>
 
@@ -26,20 +28,23 @@
             <a href="#"<i class="bx bxl-twitter"></i></a>
             <a href="#"<i class="bx bxl-linkedin"></i></a>
             <a href="#"<i class="bx bxl-github"></i></a>
+            <span class="animate" style="--i:2;"></span>
         </div>
 
         <div class="home-imgHover"> <img src="images/hzl.jpeg" style="width:700px;height:700px"; ></div>
+          <span class="animate home-img" style="--i:2;"></span>
   </section>
 
   <section class="about" id="about">
     <h2 class="heading">About<span>Me</span></h2>
     <div class="about-img">
-      <img src="images/hazal1.jpeg"  >
+      <img src="images/hazal1.jpeg">
       <span class="circle-spin"></span>
     </div>
 
     <div class="about-content">
       <h3>RPA DEVELOPER</h3>
+      <span class="animate-scroll" style="--i:4;"></span>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -51,20 +56,19 @@
     </div>
   </section>
 
-
-
-
   <body>
     <header class="header">
-      <a href="#" class="logo">HAZAL</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <a href="#" class="logo" class="animate" style="--i:1;">HAZAL</a>
+      <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
       <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Education</a>
-        <a href="#">Skills</a>
-        <a href="#">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
 
+        <span class="active-nav"></span>
+        <span class="animate" style="--i:2;"></span>
       </nav>
     </header>
     <section class="education" id="education">
@@ -116,6 +120,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </section>
             <section class="skills" id="skills">
               <h2 class="heading">My <span>Skills </span></h2>
@@ -185,6 +190,51 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
+            <section class="contact" id="contact">
+              <h2 class="heading">Contact <span>Me!</span></h2>
+              <form action="#">
+                <div class="input-box">
+                  <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Email Adress" required>
+                    <span class="focus"></span>
+                  </div>
+                </div>
+
+                <div class="input-box">
+                  <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                  </div>
+                </div>
+
+                <div class="textarea-field">
+                  <textarea name=" " id="" cols="30" row="10" placeholder="Your Message " required></textarea>
+                  <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btns">
+                  <button type="submit" class="btn">SUBMIT</button>
+                </div>
+              </form>
+            </section>
+
+             <footer class="footer">
+               <div class="footer-text">
+                 <p>Copyright ½copy; 2023 by Hazal Zengin| All Right Reserved.</p>
+               </div>
+               <div class="footer-iconTop">
+                 <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+               </div>
+             </footer>
+             <script src="js/script.js"></script>
       </body>
 </html>
